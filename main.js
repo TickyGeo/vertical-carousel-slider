@@ -8,6 +8,7 @@ const inp = document.querySelector('.slider .inp');
 let cur = 0;
 let bool = false; 
 let mouseY = 0;   
+
 slider.onmousedown = e => {
     if (e.button == 0) {
         bool = true;
@@ -51,4 +52,4 @@ slider.onmousewheel = e => {
 
 inp.oninput = () => {
     carousel.style.transform = `rotateY(${-inp.value}deg) rotateX(${cur}deg)`;
-}
+};
